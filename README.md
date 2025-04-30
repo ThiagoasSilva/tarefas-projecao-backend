@@ -5,7 +5,7 @@
 - [Java JDK 17+](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 - [Maven](https://maven.apache.org/download.cgi)
 - IDE ([IntelliJ](https://www.jetbrains.com/idea/download), [VS Code](https://code.visualstudio.com/Download) ou [Eclipse](https://www.eclipse.org/downloads/packages/))
-- [MySQL] (https://dev.mysql.com/downloads/mysql/)(ou outro banco relacional instalado e rodando) 
+- [MySQL](https://dev.mysql.com/downloads/mysql/) (ou outro banco relacional instalado e rodando) 
 
 
 ### 🚀 Passo a passo para iniciar o projeto:
