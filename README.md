@@ -231,5 +231,5 @@ Métodos: POST, GET, PUT, DELETE
 <img src="imagens/Diagrama Conceitual GTPRO.drawio.png">
 
 </details>
-=======
+
 </details>
