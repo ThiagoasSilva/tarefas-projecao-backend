@@ -226,4 +226,8 @@ Métodos: POST, GET, PUT, DELETE
 
 ### Diagrama de Classes UML
 <img src="imagens/Diagrama%20de%20Classes%20UML%20GTPRO.drawio.png">
+
+### Diagrama Conceitual 
+<img src="imagens/Diagrama Conceitual GTPRO.drawio.png">
+
 </details>
