@@ -222,7 +222,7 @@ Métodos: POST, GET, PUT, DELETE
 ----
 
 <details>
-<summary> Diagramas </summary>
+<summary> Modelagem </summary>
 
 ### [Diagrama de Classes UML](https://drive.google.com/file/d/18SvtVLn-VxeYvTe052SHKD2Dolkf-3fq/view?usp=sharing)
 <img src="imagens/Diagrama%20de%20Classes%20UML%20GTPRO.drawio.png">
@@ -230,6 +230,52 @@ Métodos: POST, GET, PUT, DELETE
 ### [Diagrama Conceitual](https://drive.google.com/file/d/1GjBUVkqMnWBbgvkSVaZaaGMATPoqvXxr/view?usp=sharing)
 <img src="imagens/Diagrama Conceitual GTPRO.drawio.png">
 
+### Modelo Físico
+~~~ sql
+create database tarefasProjecaodb;
+use tarefasProjecaodb;
+
+create table curso(
+	id int auto_increment,
+	nome varchar(50) unique not null,
+	semestres int not null,
+	area varchar(30),
+		primary key(id)
+);
+
+create table usuario(
+	id int auto_increment,
+	id_curso int,
+	cpf varchar(11) unique not null,
+	nome varchar(150) not null,
+	endereco varchar(255) not null,
+	telefoneUsuario varchar(16) not null,
+		primary key(id),
+		foreign key(id_curso) references curso(id)
+);
+
+create table disciplina(
+	id int auto_increment,
+	id_curso int,
+	nome varchar(50) unique not null,
+	nomeprofessor varchar(100) not null,
+	horario varchar(20) not null,
+	sala int not null,
+		primary key(id),
+		foreign key(id_curso) references curso(id)
+);
+
+create table tarefa(
+	id int auto_increment,
+	id_disciplina int,
+	prioridade int not null default 2,
+	nome varchar(50),
+	descricao varchar(255),
+	realizado boolean default false,
+		primary key(id),
+		foreign key(id_disciplina) references disciplina(id)
+);
+~~~
 </details>
 
 </details>
